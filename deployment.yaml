@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 221058008_srujan
+  labels:
+    app: 221058008_srujan
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 221058008_srujan
+  template:
+    metadata:
+      labels:
+        app: 221058008_srujan
+    spec:
+      containers:
+      - name: 221058008_srujan
+        image: sruju07/labtest:latest
+        ports:
+        - containerPort: 80
