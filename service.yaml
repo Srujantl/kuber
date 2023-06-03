@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: 221058008_srujan
-  name: 221058008_srujan
+    app: 08srujan
+  name: 08srujan
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
       targetPort: 80
       protocol: TCP
   selector:
-    app: 221058008_srujan
+    app: 08srujan
